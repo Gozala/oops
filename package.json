@@ -1,0 +1,44 @@
+{
+  "name": "oops",
+  "id": "oops",
+  "version": "0.0.1",
+  "description": "Functional <3 to rescue from OOPs",
+  "keywords": [
+    "oops",
+    "OOP",
+    "functional",
+    "utils",
+    "resqueue"
+  ],
+  "author": "Irakli Gozalishvili <rfobic@gmail.com> (http://jeditoolkit.com)",
+  "homepage": "https://github.com/Gozala/oops",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gozala/oops.git",
+    "web": "https://github.com/Gozala/oops"
+  },
+  "bugs": {
+    "url": "http://github.com/Gozala/oops/issues/"
+  },
+  "devDependencies": {
+    "test": "~0.x.0",
+    "phantomify": "~0.x.0",
+    "repl-utils": "~1.0.0"
+  },
+  "main": "./oops.js",
+  "scripts": {
+    "repl": "node node_modules/repl-utils",
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "node ./node_modules/phantomify/bin/cmd.js ./test/index.js",
+    "test-node": "node ./test/index.js"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Gozala/oops/License.md"
+    }
+  ],
+  "dependencies": {
+    "functional": "~1.0.0"
+  }
+}
